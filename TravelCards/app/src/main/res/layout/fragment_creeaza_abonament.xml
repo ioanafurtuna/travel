@@ -1,0 +1,342 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.travelcards.CreeazaAbonament">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Nume"
+            android:ems="10"
+            android:id="@+id/inputName"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:autoText="true"
+            android:elegantTextHeight="true"
+            android:focusableInTouchMode="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="66dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Prenume"
+            android:ems="10"
+            android:id="@+id/inputPrenume"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:autoText="true"
+            android:elegantTextHeight="true"
+            android:focusableInTouchMode="true"
+            android:layout_alignTop="@+id/inputName"
+            android:layout_toRightOf="@+id/inputName"
+            android:layout_toEndOf="@+id/inputName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduceti datele personale ale cumparatorului"
+            android:id="@+id/textViewIntroducetiDate"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/inputCNP"
+            android:layout_below="@+id/inputName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="CNP" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Serie"
+            android:ems="10"
+            android:id="@+id/inputSerieIC"
+            android:layout_below="@+id/inputCNP"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/inputNumarIC"
+            android:layout_below="@+id/inputCNP"
+            android:layout_toRightOf="@+id/inputCNP"
+            android:layout_toEndOf="@+id/inputCNP"
+            android:text="Nr." />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="CIF"
+            android:ems="10"
+            android:id="@+id/inputCIF"
+            android:layout_below="@+id/inputSerieIC"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valabil"
+            android:id="@+id/textViewValabilitate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clasa"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="30dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewValabilitate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 zile"
+                android:id="@+id/radio15zile"
+                android:checked="false"
+                android:textSize="25dp"
+                android:layout_below="@+id/textViewValabilitate" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31 zile"
+                android:id="@+id/radio31zile"
+                android:layout_alignTop="@+id/radio15zile"
+                android:layout_toRightOf="@+id/radio15zile"
+                android:layout_toEndOf="@+id/radio15zile"
+                android:checked="false"
+                android:textSize="25dp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupClasa"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/radioClasaUnu"
+                android:checked="false"
+                android:textSize="30dp"
+                android:layout_below="@+id/textViewValabilitate" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/radioClasaDoi"
+                android:layout_alignTop="@+id/radioClasaUnu"
+                android:layout_toRightOf="@+id/radioClasaUnu"
+                android:layout_toEndOf="@+id/radioClasaUnu"
+                android:checked="false"
+                android:textSize="30dp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rang"
+            android:id="@+id/textViewRang"
+            android:textSize="30dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_marginLeft="313dp"
+            android:layout_marginStart="313dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerRang"
+            android:layout_below="@+id/textViewRang"
+            android:layout_alignLeft="@+id/textViewRang"
+            android:layout_alignStart="@+id/textViewRang"
+            android:layout_alignRight="@+id/listViewRang"
+            android:layout_alignEnd="@+id/listViewRang" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewRang"
+            android:choiceMode="singleChoice"
+            android:layout_alignTop="@+id/spinnerRang"
+            android:layout_alignLeft="@+id/textViewRang"
+            android:layout_alignStart="@+id/textViewRang"
+            android:layout_alignRight="@+id/textViewRang"
+            android:layout_alignEnd="@+id/textViewRang"
+            android:layout_alignBottom="@+id/spinnerRang" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip discount"
+            android:id="@+id/textViewDiscount"
+            android:textSize="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metoda de plata"
+            android:id="@+id/textViewTipPlata"
+            android:textSize="30dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerTipDiscount"
+            android:layout_below="@+id/textViewDiscount"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textViewDiscount"
+            android:layout_alignEnd="@+id/textViewDiscount" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerTipPlata"
+
+            android:layout_above="@+id/toggleButtonAchitat"
+            android:layout_alignLeft="@+id/textViewTipPlata"
+            android:layout_alignStart="@+id/textViewTipPlata"
+            android:layout_alignRight="@+id/textViewTipPlata"
+            android:layout_alignEnd="@+id/textViewTipPlata" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Da"
+            android:id="@+id/toggleButtonAchitat"
+            android:checked="true"
+            android:textOn="Da"
+            android:textOff="Nu"
+            android:layout_toRightOf="@+id/textViewDiscount"
+            android:layout_toEndOf="@+id/textViewDiscount"
+            android:layout_marginTop="61dp"
+            android:layout_below="@+id/spinnerTipDiscount"></ToggleButton>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            android:choiceMode="singleChoice"
+            android:layout_above="@+id/toggleButtonAchitat"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewDiscount"
+            android:layout_alignRight="@+id/textViewDiscount"
+            android:layout_alignEnd="@+id/textViewDiscount" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView3"
+            android:choiceMode="singleChoice"
+            android:layout_above="@+id/toggleButtonAchitat"
+            android:layout_alignLeft="@+id/textViewTipPlata"
+            android:layout_alignStart="@+id/textViewTipPlata"
+            android:layout_below="@+id/textViewTipPlata"
+            android:layout_alignRight="@+id/textViewTipPlata"
+            android:layout_alignEnd="@+id/textViewTipPlata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Achitat"
+            android:id="@+id/textView4"
+            android:textSize="30dp"
+            android:layout_alignBottom="@+id/toggleButtonAchitat"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasul urmator"
+            android:id="@+id/btnNext"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

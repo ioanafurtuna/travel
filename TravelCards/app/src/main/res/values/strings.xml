@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TravelCards</string>
+    <string name="alege_ruta">Alege ruta</string>
+    <string name="genereaza_solutie">Genereaza solutia</string>
+    <string name="creeaza_abonament">Creeaza abonament</string>
+    <string name="tipareste_abonament">Tipareste abonament</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="statie_plecare">Statie plecare</string>
+    <string name="statie_destinatie">Statie destinatie</string>
+    <string name="ruta_via">Via(optional)</string>
+    <string name="nume_statie">Nume statie</string>
+    <string name="mai_departe">Pasul urmator</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_plecare">Data plecare</string>
+
+</resources>
